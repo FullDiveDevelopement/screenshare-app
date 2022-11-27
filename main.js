@@ -21,6 +21,8 @@ const createWindow = async () => {
     await win.loadURL('https://screen.nko.sh');
 };
 
+//
+
 app.whenReady()
     .then(async () => {
         ipcMain.on('get-sources', async (event) => {
