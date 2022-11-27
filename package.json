@@ -1,0 +1,19 @@
+{
+  "name": "screenshare-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build-windows": "bash build-windows.sh",
+    "build-linux": "bash build-linux.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.3.1",
+    "electron-packager": "^17.1.1"
+  }
+}
