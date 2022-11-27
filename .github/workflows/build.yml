@@ -15,4 +15,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: apps
-          path: *.zip
+          path: |
+            screen-linux.zip
+            screen-windows.zip
+          retention-days: 3
