@@ -8,7 +8,7 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt update
-          sudo wget -nc -O /usr/share/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+          wget -qO- https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
           sudo wget -nc -P /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/focal/winehq-focal.sources
           sudo apt update
           sudo apt-get install --install-recommends winehq-stable
