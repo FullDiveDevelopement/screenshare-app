@@ -15,11 +15,15 @@ jobs:
           npm install
           npm run build-linux
           npm run build-windows
-      - name: Upload artifacts
+      - name: Upload linux
         uses: actions/upload-artifact@v3
         with:
-          name: apps
-          path: |
-            screen-linux.zip
-            screen-windows.zip
+          name: linux.zip
+          path: screen-linux.zip
+          retention-days: 3
+      - name: Upload windows
+        uses: actions/upload-artifact@v3
+        with:
+          name: windows.zip
+          path: screen-windows.zip
           retention-days: 3
