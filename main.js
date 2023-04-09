@@ -1,5 +1,6 @@
 const { app, BrowserWindow, desktopCapturer, ipcMain } = require('electron');
 
+
 const createWindow = async () => {
     const win = new BrowserWindow({
         width: 1280,
